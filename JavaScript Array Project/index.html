@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>JavaScript Project</title>
+
+<!-- CSS File -->
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- Prime Number Checker -->
+<h2>Prime Number Checker</h2>
+
+<input type="number" id="primeNumber" placeholder="Enter number">
+<button onclick="checkPrime()">Check Prime</button>
+<p id="primeResult"></p>
+
+<hr>
+
+
+<!-- Age Eligibility Checker -->
+<h2>Age Eligibility Checker</h2>
+
+<input type="number" id="eligibilityAge" placeholder="Enter age">
+<button onclick="checkAge()">Check Eligibility</button>
+<p id="ageResult"></p>
+
+<hr>
+
+
+<!-- Shopping Discount Calculator -->
+<h2>Shopping Discount Calculator</h2>
+
+<input type="number" id="amount" placeholder="Enter shopping amount">
+<button onclick="calculateDiscount()">Calculate Discount</button>
+<p id="discountResult"></p>
+
+<hr>
+
+
+<!-- Reverse Number -->
+<h2>Reverse Number</h2>
+
+<input type="number" id="reverseInput" placeholder="Enter number">
+<button onclick="reverseNumber()">Reverse</button>
+<p id="reverseResult"></p>
+
+<hr>
+
+
+<!-- Traffic Signal Simulator -->
+<h2>Traffic Signal Simulator</h2>
+
+<button onclick="trafficSignal('red')">Red</button>
+<button onclick="trafficSignal('yellow')">Yellow</button>
+<button onclick="trafficSignal('green')">Green</button>
+
+<p id="trafficResult"></p>
+
+<hr>
+
+
+<!-- Even Or Odd Checker -->
+<h2>Even Or Odd Checker</h2>
+
+<input type="number" id="evenOddInput" placeholder="Enter number">
+<button onclick="checkEvenOdd()">Check</button>
+<p id="evenOddResult"></p>
+
+<hr>
+
+
+<!-- BMI Calculator -->
+<h2>BMI Calculator</h2>
+
+<label>Weight (kg):</label>
+<input type="number" id="weight" placeholder="Enter weight">
+
+<br><br>
+
+<label>Height (meter):</label>
+<input type="number" id="height" placeholder="Enter height">
+
+<br><br>
+
+<button onclick="calculateBMI()">Calculate BMI</button>
+<p id="bmiResult"></p>
+
+<hr>
+
+
+<!-- Age Calculator -->
+<h2>Age Calculator</h2>
+
+<input type="number" id="ageInput" placeholder="Enter your age">
+<button onclick="calculateAge()">Check Age</button>
+<p id="ageCalculatorResult"></p>
+
+<hr>
+
+
+<!-- Factorial -->
+<h2>Factorial of a Number</h2>
+
+<label>Enter Number:</label>
+<input type="number" id="factorialInput">
+
+<br><br>
+
+<button onclick="findFactorial()">Find Factorial</button>
+<p id="factorialResult"></p>
+
+<hr>
+
+
+<!-- Currency Converter -->
+<h2>Currency Converter</h2>
+
+<label>Enter USD:</label>
+<input type="number" id="usd">
+
+<br><br>
+
+<button onclick="convertCurrency()">Convert</button>
+<p id="currencyResult"></p>
+
+<hr>
+
+
+<!-- Vowel Or Consonant -->
+<h2>Vowel or Consonant Checker</h2>
+
+<label>Enter a character:</label>
+<input type="text" id="character">
+
+<br><br>
+
+<button onclick="checkCharacter()">Check</button>
+<p id="vowelResult"></p>
+
+<hr>
+
+
+<!-- Array Sum -->
+<h2>Array Sum Calculator</h2>
+
+<input
+    type="text"
+    id="sumNumbers"
+    placeholder="Enter numbers e.g. 10,20,30"
+>
+
+<button onclick="calculateSum()">Calculate Sum</button>
+<h3 id="sumResult"></h3>
+
+<hr>
+
+
+<!-- Largest Number -->
+<h2>Find Largest Number in Array</h2>
+
+<input
+    type="text"
+    id="largestNumbers"
+    placeholder="Enter numbers e.g. 10,25,50,33"
+>
+
+<button onclick="findLargest()">Find Largest</button>
+<h3 id="largestResult"></h3>
+
+<hr>
+
+
+<!-- Reverse Array -->
+<h2>Reverse Array</h2>
+
+<input
+    type="text"
+    id="reverseArrayNumbers"
+    placeholder="Enter numbers e.g. 10,20,30,40"
+>
+
+<button onclick="reverseArray()">Reverse</button>
+<h3 id="reverseArrayResult"></h3>
+
+<hr>
+
+
+<!-- Count Even Odd -->
+<h2>Count Even and Odd Numbers</h2>
+
+<input
+    type="text"
+    id="evenOddNumbers"
+    placeholder="Enter numbers e.g. 10,15,20,25"
+>
+
+<button onclick="countEvenOdd()">Count</button>
+<h3 id="evenOddArrayResult"></h3>
+
+<hr>
+
+
+<!-- Smallest Number -->
+<h2>Find Smallest Number in Array</h2>
+
+<input
+    type="text"
+    id="smallestNumbers"
+    placeholder="Enter numbers e.g. 20,10,30,5,40"
+>
+
+<button onclick="findSmallest()">Find Smallest</button>
+<h3 id="smallestResult"></h3>
+
+<hr>
+
+
+<!-- Search Element -->
+<h2>Search Element in Array</h2>
+
+<input
+    type="text"
+    id="searchNumbers"
+    placeholder="Enter numbers e.g. 13,15,18,9,78"
+>
+
+<input
+    type="number"
+    id="searchElement"
+    placeholder="Search number"
+>
+
+<button onclick="searchElementInArray()">Search</button>
+<h3 id="searchResult"></h3>
+
+<hr>
+
+
+<!-- Second Largest -->
+<h2>Find Second Largest Number</h2>
+
+<input
+    type="text"
+    id="secondLargestNumbers"
+    placeholder="Enter numbers e.g. 10,50,30,80,20"
+>
+
+<button onclick="findSecondLargest()">Find</button>
+<p id="secondLargestResult"></p>
+
+<hr>
+
+
+<!-- Remove Duplicate -->
+<h2>Remove Duplicate Array</h2>
+
+<p>Enter numbers separated by commas</p>
+
+<input
+    type="text"
+    id="duplicateNumbers"
+    placeholder="10,20,10,30,20,40"
+>
+
+<button onclick="removeDuplicate()">
+    Remove Duplicates
+</button>
+
+<p id="duplicateResult"></p>
+
+<hr>
+
+
+<!-- Array Average -->
+<h2>Array Average</h2>
+
+<p>Enter numbers separated by commas</p>
+
+<input
+    type="text"
+    id="averageNumbers"
+    placeholder="10,20,30,40,50"
+>
+
+<button onclick="findAverage()">
+    Calculate Average
+</button>
+
+<p id="averageResult"></p>
+
+
+<!-- JavaScript File -->
+<script src="script.js"></script>
+```
+
+</body>
+
+</html>

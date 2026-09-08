@@ -1,0 +1,606 @@
+
+
+/* ---------------------------------------
+   GLOBAL STYLE
+--------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background: #eef2f7;
+    color: #1f2937;
+}
+
+/* Main Page Title */
+body::before {
+    content: "JavaScript Project";
+    display: block;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 35px;
+    color: #111827;
+    letter-spacing: 1px;
+}
+
+
+/* ---------------------------------------
+   COMMON HEADING
+--------------------------------------- */
+
+h2 {
+    width: 90%;
+    max-width: 850px;
+    margin: 35px auto 15px;
+    padding: 20px 25px;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    border-radius: 18px 18px 0 0;
+
+    color: white;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ---------------------------------------
+   COMMON INPUT
+--------------------------------------- */
+
+input {
+    display: inline-block;
+
+    width: 280px;
+    padding: 13px 16px;
+
+    margin: 8px 5px;
+
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+
+    font-size: 15px;
+    outline: none;
+
+    background: white;
+
+    transition: 0.3s;
+}
+
+input:focus {
+    transform: translateY(-2px);
+    border-color: #6366f1;
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.20);
+}
+
+
+/* ---------------------------------------
+   COMMON BUTTON
+--------------------------------------- */
+
+button {
+    padding: 12px 20px;
+
+    margin: 8px 5px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: white;
+    background: #111827;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.20);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+/* ---------------------------------------
+   LABEL
+--------------------------------------- */
+
+label {
+    display: inline-block;
+
+    font-weight: 600;
+    margin: 8px 5px;
+
+    color: #374151;
+}
+
+
+/* ---------------------------------------
+   RESULT
+--------------------------------------- */
+
+p[id],
+h3[id] {
+    width: 90%;
+    max-width: 850px;
+
+    margin: 15px auto;
+
+    padding: 15px 20px;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.90);
+
+    font-size: 16px;
+    font-weight: 600;
+
+    min-height: 20px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---------------------------------------
+   HORIZONTAL LINE
+--------------------------------------- */
+
+hr {
+    width: 90%;
+    max-width: 850px;
+
+    margin: 45px auto;
+
+    border: none;
+    border-top: 2px dashed #cbd5e1;
+}
+
+
+/* ---------------------------------------
+   1. PRIME NUMBER CHECKER
+--------------------------------------- */
+
+h2:nth-of-type(1) {
+    background: linear-gradient(135deg, #312e81, #6366f1);
+}
+
+#primeResult {
+    border-left: 6px solid #6366f1;
+}
+
+
+/* ---------------------------------------
+   2. AGE ELIGIBILITY
+--------------------------------------- */
+
+h2:nth-of-type(2) {
+    background: linear-gradient(135deg, #065f46, #10b981);
+}
+
+#ageResult {
+    border-left: 6px solid #10b981;
+}
+
+
+/* ---------------------------------------
+   3. SHOPPING DISCOUNT
+--------------------------------------- */
+
+h2:nth-of-type(3) {
+    background: linear-gradient(135deg, #9a3412, #f97316);
+}
+
+#discountResult {
+    border-left: 6px solid #f97316;
+}
+
+
+/* ---------------------------------------
+   4. REVERSE NUMBER
+--------------------------------------- */
+
+h2:nth-of-type(4) {
+    background: linear-gradient(135deg, #7c2d12, #ef4444);
+}
+
+#reverseResult {
+    border-left: 6px solid #ef4444;
+}
+
+
+/* ---------------------------------------
+   5. TRAFFIC SIGNAL
+--------------------------------------- */
+
+h2:nth-of-type(5) {
+    background: linear-gradient(135deg, #111827, #374151);
+}
+
+h2:nth-of-type(5) ~ button {
+    border-radius: 50px;
+}
+
+
+/* Red Button */
+button[onclick="trafficSignal('red')"] {
+    background: #dc2626;
+}
+
+
+/* Yellow Button */
+button[onclick="trafficSignal('yellow')"] {
+    background: #eab308;
+    color: #111827;
+}
+
+
+/* Green Button */
+button[onclick="trafficSignal('green')"] {
+    background: #16a34a;
+}
+
+#trafficResult {
+    border-left: 6px solid #22c55e;
+    font-size: 20px;
+}
+
+
+/* ---------------------------------------
+   6. EVEN OR ODD
+--------------------------------------- */
+
+h2:nth-of-type(6) {
+    background: linear-gradient(135deg, #075985, #0ea5e9);
+}
+
+#evenOddResult {
+    border-left: 6px solid #0ea5e9;
+}
+
+
+/* ---------------------------------------
+   7. BMI CALCULATOR
+--------------------------------------- */
+
+h2:nth-of-type(7) {
+    background: linear-gradient(135deg, #9f1239, #ec4899);
+}
+
+#bmiResult {
+    border-left: 6px solid #ec4899;
+}
+
+
+/* ---------------------------------------
+   8. AGE CALCULATOR
+--------------------------------------- */
+
+h2:nth-of-type(8) {
+    background: linear-gradient(135deg, #3730a3, #8b5cf6);
+}
+
+#ageCalculatorResult {
+    border-left: 6px solid #8b5cf6;
+}
+
+
+/* ---------------------------------------
+   9. FACTORIAL
+--------------------------------------- */
+
+h2:nth-of-type(9) {
+    background: linear-gradient(135deg, #713f12, #ca8a04);
+}
+
+#factorialResult {
+    border-left: 6px solid #eab308;
+}
+
+
+/* ---------------------------------------
+   10. CURRENCY CONVERTER
+--------------------------------------- */
+
+h2:nth-of-type(10) {
+    background: linear-gradient(135deg, #064e3b, #059669);
+}
+
+#currencyResult {
+    border-left: 6px solid #10b981;
+}
+
+
+/* ---------------------------------------
+   11. VOWEL / CONSONANT
+--------------------------------------- */
+
+h2:nth-of-type(11) {
+    background: linear-gradient(135deg, #581c87, #a855f7);
+}
+
+#vowelResult {
+    border-left: 6px solid #a855f7;
+}
+
+
+/* ---------------------------------------
+   12. ARRAY SUM
+--------------------------------------- */
+
+h2:nth-of-type(12) {
+    background: linear-gradient(135deg, #164e63, #06b6d4);
+}
+
+#sumResult {
+    border-left: 6px solid #06b6d4;
+}
+
+
+/* ---------------------------------------
+   13. LARGEST NUMBER
+--------------------------------------- */
+
+h2:nth-of-type(13) {
+    background: linear-gradient(135deg, #7f1d1d, #f43f5e);
+}
+
+#largestResult {
+    border-left: 6px solid #f43f5e;
+}
+
+
+/* ---------------------------------------
+   14. REVERSE ARRAY
+--------------------------------------- */
+
+h2:nth-of-type(14) {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+}
+
+#reverseArrayResult {
+    border-left: 6px solid #3b82f6;
+}
+
+
+/* ---------------------------------------
+   15. COUNT EVEN / ODD
+--------------------------------------- */
+
+h2:nth-of-type(15) {
+    background: linear-gradient(135deg, #166534, #22c55e);
+}
+
+#evenOddArrayResult {
+    border-left: 6px solid #22c55e;
+}
+
+
+/* ---------------------------------------
+   16. SMALLEST NUMBER
+--------------------------------------- */
+
+h2:nth-of-type(16) {
+    background: linear-gradient(135deg, #831843, #db2777);
+}
+
+#smallestResult {
+    border-left: 6px solid #db2777;
+}
+
+
+/* ---------------------------------------
+   17. SEARCH ELEMENT
+--------------------------------------- */
+
+h2:nth-of-type(17) {
+    background: linear-gradient(135deg, #312e81, #4f46e5);
+}
+
+#searchResult {
+    border-left: 6px solid #4f46e5;
+}
+
+
+/* ---------------------------------------
+   18. SECOND LARGEST
+--------------------------------------- */
+
+h2:nth-of-type(18) {
+    background: linear-gradient(135deg, #78350f, #d97706);
+}
+
+#secondLargestResult {
+    border-left: 6px solid #f59e0b;
+}
+
+
+/* ---------------------------------------
+   19. REMOVE DUPLICATES
+--------------------------------------- */
+
+h2:nth-of-type(19) {
+    background: linear-gradient(135deg, #134e4a, #14b8a6);
+}
+
+#duplicateResult {
+    border-left: 6px solid #14b8a6;
+}
+
+
+/* ---------------------------------------
+   20. ARRAY AVERAGE
+--------------------------------------- */
+
+h2:nth-of-type(20) {
+    background: linear-gradient(135deg, #4c1d95, #7c3aed);
+}
+
+#averageResult {
+    border-left: 6px solid #7c3aed;
+}
+
+
+/* ---------------------------------------
+   ARRAY INPUTS
+--------------------------------------- */
+
+#sumNumbers,
+#largestNumbers,
+#reverseArrayNumbers,
+#evenOddNumbers,
+#smallestNumbers,
+#searchNumbers,
+#secondLargestNumbers,
+#duplicateNumbers,
+#averageNumbers {
+    width: 380px;
+}
+
+
+/* ---------------------------------------
+   SEARCH INPUT
+--------------------------------------- */
+
+#searchElement {
+    width: 180px;
+}
+
+
+/* ---------------------------------------
+   TRAFFIC RESULT
+--------------------------------------- */
+
+#trafficResult {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+
+/* ---------------------------------------
+   HOVER EFFECT ON RESULT
+--------------------------------------- */
+
+p[id]:hover,
+h3[id]:hover {
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+
+/* ---------------------------------------
+   RESPONSIVE DESIGN
+--------------------------------------- */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+    body::before {
+        font-size: 30px;
+    }
+
+    h2 {
+        width: 95%;
+        font-size: 21px;
+        padding: 17px;
+    }
+
+    input {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #sumNumbers,
+    #largestNumbers,
+    #reverseArrayNumbers,
+    #evenOddNumbers,
+    #smallestNumbers,
+    #searchNumbers,
+    #secondLargestNumbers,
+    #duplicateNumbers,
+    #averageNumbers {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+
+    p[id],
+    h3[id] {
+        width: 95%;
+    }
+
+    hr {
+        width: 95%;
+    }
+}
+
+
+/* ---------------------------------------
+   MOBILE
+--------------------------------------- */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 20px 8px;
+    }
+
+    body::before {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        width: 100%;
+        font-size: 19px;
+        text-align: center;
+        border-radius: 14px 14px 0 0;
+    }
+
+    input {
+        width: 100%;
+        margin: 7px 0;
+    }
+
+    button {
+        width: auto;
+        padding: 11px 16px;
+        font-size: 14px;
+    }
+
+    p[id],
+    h3[id] {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    hr {
+        width: 100%;
+        margin: 30px auto;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+    }
+}
