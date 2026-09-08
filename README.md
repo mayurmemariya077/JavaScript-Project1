@@ -7,7 +7,7 @@ This project is created to practice JavaScript fundamentals, DOM manipulation, c
 
 ## 🌐 Live Demo
 
-🔗 **[View Live Demo on CodePen](YOUR_CODEPEN_LINK_HERE)**
+🔗 **[View Live Demo on CodePen](https://codepen.io/editor/mayurmemariya077/pen/01a07fc0-16ab-7114-af1a-c12e138147b5)**
 
 > 💡 Replace `YOUR_CODEPEN_LINK_HERE` with your actual CodePen project link.
 
